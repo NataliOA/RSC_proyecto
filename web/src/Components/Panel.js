@@ -23,7 +23,7 @@ function CustomTabPanel(props) {
       {value === 0 && theme === 1 &&(
         <Typography>11</Typography>
       )}
-      {value === 1 && theme === 1 &&(
+      {value === 1 && theme === 1 &&( 
         <Typography>12</Typography>
       )}
       {value === 2 && theme === 1 &&(
@@ -85,7 +85,7 @@ export default function Panel({Id}) {
         <Typography>{info[Id][2]}</Typography>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
-            <Tab label={info[Id][3]} />
+            <Tab label={info[Id][3]}/>
             <Tab label={info[Id][4]} />
             <Tab label={info[Id][5]}/>
             <Tab label={info[Id][6]}/>
