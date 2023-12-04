@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Menu from './Menu.js';
-import { Grid, Paper } from '@mui/material';
+import Panel from './Panel.js';
+import { Grid } from '@mui/material';
 
 export default function Body(){
     
@@ -16,7 +17,7 @@ export default function Body(){
                 <Menu setSelectedItem={handleSelectedItem} />
             </Grid>
             <Grid item xs={10}>
-                <Paper>{selectedIndex}</Paper>
+                <Panel Id={selectedIndex}/>
             </Grid>
         </Grid>
     );
