@@ -70,18 +70,6 @@ function CustomTabPanel(props) {
       {value === 3 && theme === 3 &&(
         <Typography><IoT4/></Typography>
       )}
-      {value === 0 && theme === 4 &&(
-        <Typography>41</Typography>
-      )}
-      {value === 1 && theme === 4 &&(
-        <Typography>42</Typography>
-      )}
-      {value === 2 && theme === 4 &&(
-        <Typography>43</Typography>
-      )}
-      {value === 3 && theme === 4 &&(
-        <Typography></Typography>
-      )}
     </div>
   );
 }
