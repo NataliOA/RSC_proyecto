@@ -31,7 +31,7 @@ export default function Menu({setSelectedItem}){
 
     return(
         <ThemeProvider theme={theme}>
-            <MenuList sx={{ height: '100vh', backgroundColor: 'primary.main', color: 'white' }}>
+            <MenuList sx={{ height: '100%', backgroundColor: 'primary.main', color: 'white' }}>
                 <MenuItem sx={{ '&:hover': { backgroundColor: 'secondary.main' }, '&.Mui-selected': { backgroundColor: 'secondary.main', color: 'primary.contrastText' } }} onClick={() => handleItemClick(0)}>Inicio</MenuItem>
             <Divider />
                 <MenuItem sx={{ '&:hover': { backgroundColor: 'secondary.main' }, '&.Mui-selected': { backgroundColor: 'secondary.main', color: 'primary.contrastText' } }} onClick={() => handleItemClick(1)}><Typography variant="body1">Honey Nets</Typography></MenuItem>

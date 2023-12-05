@@ -3,6 +3,20 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import HoneyNets1 from './HoneyNets1';
+import HoneyNets2 from './HoneyNets2';
+import HoneyNets3 from './HoneyNets3';
+import HoneyNets4 from './HoneyNets4';
+import Tunneling1 from './Tunneling1';
+import Tunneling2 from './Tunneling2';
+import Tunneling3 from './Tunneling3';
+import Tunneling4 from './Tunneling4';
+import IoT1 from './IoT1';
+import IoT2 from './IoT2';
+import IoT3 from './IoT3';
+import IoT4 from './IoT4';
+import Inicio from './Inicio';
+import Credits from './creditos';
 
 const info = [
     [true,false,false,true],
@@ -21,40 +35,40 @@ function CustomTabPanel(props) {
       hidden={value !== index}
     >
       {value === 0 && theme === 1 &&(
-        <Typography>11</Typography>
+        <Typography><HoneyNets1/></Typography>
       )}
       {value === 1 && theme === 1 &&( 
-        <Typography>12</Typography>
+        <Typography><HoneyNets2/></Typography>
       )}
       {value === 2 && theme === 1 &&(
-        <Typography>13</Typography>
+        <Typography><HoneyNets3/></Typography>
       )}
       {value === 3 && theme === 1 &&(
-        <Typography>14</Typography>
+        <Typography><HoneyNets4/></Typography>
       )}
       {value === 0 && theme === 2 &&(
-        <Typography>21</Typography>
+        <Typography><Tunneling1/></Typography>
       )}
       {value === 1 && theme === 2 &&(
-        <Typography>22</Typography>
+        <Typography><Tunneling2/></Typography>
       )}
       {value === 2 && theme === 2 &&(
-        <Typography>23</Typography>
+        <Typography><Tunneling3/></Typography>
       )}
       {value === 3 && theme === 2 &&(
-        <Typography>24</Typography>
+        <Typography><Tunneling4/></Typography>
       )}
       {value === 0 && theme === 3 &&(
-        <Typography>31</Typography>
+        <Typography><IoT1/></Typography>
       )}
       {value === 1 && theme === 3 &&(
-        <Typography>32</Typography>
+        <Typography><IoT2/></Typography>
       )}
       {value === 2 && theme === 3 &&(
-        <Typography>33</Typography>
+        <Typography><IoT3/></Typography>
       )}
       {value === 3 && theme === 3 &&(
-        <Typography>34</Typography>
+        <Typography><IoT4/></Typography>
       )}
       {value === 0 && theme === 4 &&(
         <Typography>41</Typography>
@@ -66,7 +80,7 @@ function CustomTabPanel(props) {
         <Typography>43</Typography>
       )}
       {value === 3 && theme === 4 &&(
-        <Typography>44</Typography>
+        <Typography></Typography>
       )}
     </div>
   );
@@ -82,7 +96,7 @@ export default function Panel({Id}) {
   return (
     <Box sx={{ width: '100%' }}>
       <div hidden={info[Id][0]}>
-        <Typography>{info[Id][2]}</Typography>
+        <Typography variant='h6' sx={{ fontSize: '1.8rem', color: 'primary.main', textAlign: 'center'  }}>{info[Id][2]}</Typography>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
             <Tab label={info[Id][3]}/>
@@ -102,10 +116,10 @@ export default function Panel({Id}) {
       </div>
       <div hidden={info[Id][1]}>
         <box hidden={info[Id][2]}>
-            Página principal
+            <Inicio/>
         </box>
         <box hidden={info[Id][3]}>
-            Créditos
+            <Credits/>
         </box>
       </div>
     </Box>

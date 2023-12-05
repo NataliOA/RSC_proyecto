@@ -12,7 +12,7 @@ export default function Body(){
     };
 
     return(
-        <Grid container sx={{backgroundColor:'green'}}>
+        <Grid container sx={{backgroundColor:'white'}}>
             <Grid item xs={2}>
                 <Menu setSelectedItem={handleSelectedItem} />
             </Grid>
